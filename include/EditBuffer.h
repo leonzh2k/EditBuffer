@@ -35,6 +35,20 @@ size_t EditBufferInsert(SEditBufferRef ebuf, const char *buf, size_t count);
 
 size_t EditBufferDelete(SEditBufferRef ebuf, size_t count);
 
+void printOptions();
+ 
+void moveBufferCursor(SEditBufferRef EditBuffer);
+
+void insertCharsIntoBuffer(SEditBufferRef EditBuffer);
+
+void deleteCharsFromBuffer(SEditBufferRef EditBuffer);
+
+void printCharsInBuffer(SEditBufferRef EditBuffer);
+
+void printBufferSize(SEditBufferRef EditBuffer);
+
+void newLine();
+
 #ifdef __cplusplus
 }
 #endif

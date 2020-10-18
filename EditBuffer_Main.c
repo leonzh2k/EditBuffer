@@ -4,13 +4,6 @@
 #include "./include/EditBuffer.h"
 #define MAX_LOAD_STRING 5000
 
-void printOptions();
-void moveBufferCursor(SEditBufferRef EditBuffer);
-void insertCharsIntoBuffer(SEditBufferRef EditBuffer);
-void deleteCharsFromBuffer(SEditBufferRef EditBuffer);
-void printCharsInBuffer(SEditBufferRef EditBuffer);
-void printBufferSize(SEditBufferRef EditBuffer);
-void newLine();
 
 int main() {
     printf("===================EDIT BUFFER=====================\n");
