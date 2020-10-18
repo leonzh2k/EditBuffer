@@ -19,6 +19,10 @@ SEditBufferRef EditBufferCreate();
 
 void EditBufferDestroy(SEditBufferRef ebuf);
 
+void PrintEditBuffer(SEditBufferRef ebuf);
+
+size_t EditBufferChars(SEditBufferRef ebuf);
+
 size_t EditBufferSize(SEditBufferRef ebuf);
 
 size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin);
