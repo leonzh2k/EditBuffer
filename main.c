@@ -65,7 +65,7 @@ int main() {
     return 0;
 }
 
-//gcc -Wall -Werror main.c src/EditBuffer.c 
+//gcc -Wall -Werror main.c src/EditBuffer.c -o EditBuffer
 //./EditBuffer
 
 void printOptions() {
