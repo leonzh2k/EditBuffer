@@ -20,14 +20,16 @@ A data structure implemented in C for a class project
 ### What I Learned
 * Structs, Pointers, and Dynamic Memory Allocation
 
-
 ## Technologies
 * C
 
 ## Features
+* ASCII based GUI
+* Buffer automatically resizes as needed
+* Input Validation
 
-## Things to Keep In Mind
+## Things to Keep In Minds
 
 ## References
-* *https://www.geeksforgeeks.org/gap-buffer-data-structure/
+* https://www.geeksforgeeks.org/gap-buffer-data-structure/
 
