@@ -36,6 +36,8 @@ size_t EditBufferInsert(SEditBufferRef ebuf, const char *buf, size_t count);
 size_t EditBufferDelete(SEditBufferRef ebuf, size_t count);
 
 void printOptions();
+
+void loadStringIntoBuffer(SEditBufferRef EditBuffer);
  
 void moveBufferCursor(SEditBufferRef EditBuffer);
 

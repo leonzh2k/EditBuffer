@@ -79,7 +79,7 @@ size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin) {
     if (origin == EDIT_BUFFER_ORIGIN_BEGINNING) {
         //catch negative offset
         if (offset < 0) {
-            printf("Cannot have negative characters between cursor and beginning. Move not performed.\n");
+            printf("Cannot have negative characters between cursor and beginning. Move not performed.\n\n");
             return ebuf->left_gap_start;
         }
         //moving the cursor left, chars right increase, left decrease
@@ -117,11 +117,11 @@ size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin) {
         //case of negative offset
         if (offset < 0) {
             if (ebuf->chars_left_of_gap == 0) {
-                printf("Cannot move cursor to the left; no characters to the left of the cursor!\n");
+                printf("Cannot move cursor to the left; no characters to the left of the cursor!\n\n");
                 return 0;
             }
             else if (abs(offset) > ebuf->chars_left_of_gap) {
-                printf("Offset is greater than # characters to left of cursor. Move not performed.\n");
+                printf("Offset is greater than # characters to left of cursor. Move not performed.\n\n");
                 return 0;
             }
             else {
@@ -145,11 +145,11 @@ size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin) {
         else {
             size_t real_offset = ebuf->chars_left_of_gap + offset;
             if (ebuf->chars_right_of_gap == 0) {
-                printf("Cannot move cursor to the right; no characters to the right of the cursor!\n");
+                printf("Cannot move cursor to the right; no characters to the right of the cursor!\n\n");
                 return 0;
             }
             else if (abs(offset) > ebuf->chars_right_of_gap) {
-                printf("Offset is greater than # characters to right of cursor. Move not performed.\n");
+                printf("Offset is greater than # characters to right of cursor. Move not performed.\n\n");
                 return 0;
             }
             else {
@@ -170,7 +170,7 @@ size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin) {
     }
     else if (origin == EDIT_BUFFER_ORIGIN_END) {
         if (offset < 0) {
-            printf("Cannot have negative characters between cursor and end. Move not performed.\n");
+            printf("Cannot have negative characters between cursor and end. Move not performed.\n\n");
             return ebuf->left_gap_start;
         }
         //you actually don't always move it right. you might have to move it left depending on where characteres are
@@ -206,6 +206,7 @@ size_t EditBufferMoveCursor(SEditBufferRef ebuf, int offset, int origin) {
             }
         }
         offset_beginning = ebuf->left_gap_start;
+        printf("Cursor moved.\n\n");
         return offset_beginning;
     }
     else {
@@ -367,7 +368,7 @@ size_t EditBufferDelete(SEditBufferRef ebuf, size_t count){
             ebuf->right_gap_start++;
             ebuf->chars_right_of_gap--;
         }
-        printf("Characters to be deleted is greater than characters to the right of cursor. All characters to the right deleted.\n");
+        printf("Characters to be deleted is greater than characters to the right of cursor. All characters to the right deleted.\n\n");
         return chars_to_be_deleted;
     }
     else  {
