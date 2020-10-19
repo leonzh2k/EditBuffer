@@ -11,7 +11,7 @@ A data structure implemented in C for a class project
 * [References](#references)
 
 ## Introduction
-In my C class I was tasked to implement an edit buffer. An edit buffer is commonly used in text editors. There were a few data structures I could use to accomplish this task with; I went with a [gap buffer](https://en.wikipedia.org/wiki/Gap_buffer). 
+In my C class I was tasked to implement an edit buffer. An edit buffer is commonly used in text editors. There were a few data structures I could use to accomplish this task with; I went with a <a href="https://en.wikipedia.org/wiki/Gap_buffer" target="_blank">gap buffer</a>.
 
 ## Setup
 ### On Windows
