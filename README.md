@@ -1,4 +1,4 @@
-# GapBuffer 
+# EditBuffer 
 
 A data structure implemented in C for a class project
 
@@ -28,6 +28,7 @@ Download and extract the ZIP. Navigate to its directory and check the source fil
 
 ## Features
 * ASCII based GUI
+* Various options to view status of buffer
 * Buffer automatically resizes as needed
 * Input Validation
 
