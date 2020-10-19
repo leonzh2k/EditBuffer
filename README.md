@@ -8,7 +8,7 @@ A data structure implemented in C for a class project
 * [Technologies](#technologies)
 * [Features](#features)
 * [What I Learned](#what-i-learned)
-* [References](#references)
+
 
 ## Introduction
 In my C class I was tasked to implement an edit buffer. An edit buffer is commonly used in text editors. There were a few data structures I could use to accomplish this task with; I went with a <a href="https://en.wikipedia.org/wiki/Gap_buffer" target="_blank">gap buffer</a>.
@@ -34,6 +34,5 @@ Download and extract the ZIP. Navigate to its directory and check the source fil
 ## What I Learned
 * Structs, Pointers, and Dynamic Memory Allocation
 
-## References
-* https://www.geeksforgeeks.org/gap-buffer-data-structure/
+
 
